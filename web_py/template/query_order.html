@@ -1,0 +1,76 @@
+$def with (data)
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>自助下单统计</title>
+    <link rel="stylesheet" type="text/css" href="/static/css/jquery-ui.css"/>
+    <style type="text/css">
+        table.gridtable {
+            font-family: verdana,arial,sans-serif;
+            font-size:11px;
+            color:#333333;
+            border-width: 1px;
+            border-color: #666666;
+            border-collapse: collapse;
+        }
+        table.gridtable th {
+            border-width: 1px;
+            padding: 8px;
+            border-style: solid;
+            border-color: #666666;
+            background-color: #dedede;
+        }
+        table.gridtable td {
+            border-width: 1px;
+            padding: 8px;
+            border-style: solid;
+            border-color: #666666;
+            background-color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+<div>
+    <p id='trade_info'>今天交易统计: </p>
+    <table class="gridtable" id='all_order' title="所有订单">
+        <caption>自助下单列表</caption>
+        <tbody>
+        <tr>
+            <th>编号</th>
+            <th>UserId</th>
+            <th>下单金额</th>
+            <th>所属活动</th>
+            <th>门店名称</th>
+            <th>客户电话</th>
+            <th>销售</th>
+            <th>销售电话</th>
+            <th>城市站</th>
+            <th>下单时间</th>
+        </tr>
+        $ for e in data['order']:
+
+        <tr>
+            <td>Text 1A</td>
+            <td>Text 1B</td>
+            <td>Text 1C</td>
+        </tr>
+        <tr>
+            <td>Text 2A</td>
+            <td>Text 2B</td>
+            <td>Text 2C</td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+
+<div>
+    <p>单个活动的下单情况:
+        <select id="actName">
+            <option>请选择活动</option>
+            $for e in data['act']:
+            <option value="$e['id']">$e['name']</option>
+        </select>
+    </p>
+</div>
+</body>
+</html>

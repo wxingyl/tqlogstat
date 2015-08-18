@@ -1,0 +1,33 @@
+{
+	"data":
+	[
+		{
+			"order_id": 196745,
+			"order_sn": "B15032411001004",
+			"order_status": 1,
+			"trade_status": "XTDD",
+			"referer": "APP端:862289021347261|android 17|3.0",
+			"user_id": 47392,
+			"discount": 2,
+			"shipping_fee": 0,
+			"order_amount": 629,
+			"attributes": ";tuesdayCoupon:2.00;orderSource:SelfOrder;selfOrder:862289021347261;",
+			"order_flags": null,
+			"cha": -2
+		},
+		{
+			"order_id": 196747,
+			"order_sn": "B15032419001004",
+			"order_status": 1,
+			"trade_status": "XTDD",
+			"referer": "APP端:A8E432DD-4E30-4F03-B6E7-75E9EDC88E40|iPhone OS 8.0.2|2.8.4",
+			"user_id": 109647,
+			"discount": 2,
+			"shipping_fee": 0,
+			"order_amount": 2178,
+			"attributes": ";tuesdayCoupon:2.00;orderSource:SelfOrder;selfOrder:A8E432DD-4E30-4F03-B6E7-75E9EDC88E40;",
+			"order_flags": null,
+			"cha": -2
+		}
+	]
+}
